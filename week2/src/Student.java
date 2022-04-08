@@ -1,5 +1,8 @@
 import java.util.Comparator;
+import java.util.Arrays;
+
 public class Student implements Comparable<Student>{
+
     protected int id;
     String name;
     protected String dept;
@@ -25,6 +28,7 @@ public class Student implements Comparable<Student>{
     //이름으로 비교하는 compare
     public static Comparator<Student> CompName = new Comparator<Student>() {
         @Override
+        //별도의 class
         public int compare(Student s1, Student s2) {
             return s1.name.compareTo(s2.name);
         }
@@ -46,6 +50,7 @@ public class Student implements Comparable<Student>{
         }
     };
 }
+
 
 
 
