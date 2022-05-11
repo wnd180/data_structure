@@ -1,5 +1,4 @@
 import java.util.NoSuchElementException;
-
 public class ArrList <E>{
     private E a[]; //E 제네릭타입 -> 어떤 타입 들어올지 모름
     private int size;
