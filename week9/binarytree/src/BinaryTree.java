@@ -17,7 +17,6 @@ public class BinaryTree<Key extends Comparable<Key>> {
             preorder(n.getRight());
         }
     }
-
     public void inorder(Node n){
         if(n!=null){
             inorder(n.getLeft());
